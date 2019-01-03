@@ -1,0 +1,21 @@
+{
+    "files.exclude": {
+        "node_modules/": true,
+        "LICENSE": true,
+        "build": true,
+        "**/*.js": {
+            "when": "$(basename).ts"
+        }
+    },
+    "editor.formatOnSave": true,
+    "cSpell.words": [
+        "Segoe",
+        "antialiased",
+        "browserslist",
+        "homescreen",
+        "keyframes",
+        "noopener",
+        "noreferrer",
+        "webfonts"
+    ]
+}
