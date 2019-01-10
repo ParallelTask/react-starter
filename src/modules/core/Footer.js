@@ -1,13 +1,13 @@
 import React from 'react';
 
-class About extends React.Component {
+class ASKFooter extends React.Component {
     render() {
         return (
             <h1>
-                AboutComponent
+                Footer
             </h1>
         );
     }
 }
 
-export default About;
+export default ASKFooter;

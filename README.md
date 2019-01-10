@@ -70,3 +70,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 ### eslint-plugin-react
 
 This section has moved here: https://github.com/yannickcr/eslint-plugin-react
+
+### install @types/reactstrap
+
+Do not forget to install @types/xxx which makes auto-import to work in vscode.

@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from './components/Home';
-import About from './components/About';
+import Home from './modules/home/Home';
+import About from './modules/about/About';
 
-class AppRouter extends React.Component {
+class ASKAppRouter extends React.Component {
     render() {
         return (
             <Router>
@@ -16,4 +16,4 @@ class AppRouter extends React.Component {
     }
 }
 
-export default AppRouter;
+export default ASKAppRouter;

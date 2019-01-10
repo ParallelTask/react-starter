@@ -1,13 +1,13 @@
 import React from 'react';
 
-class Home extends React.Component {
+class ASKHeader extends React.Component {
     render() {
         return (
             <h1>
-                HomeComponent
+                Header
             </h1>
         );
     }
 }
 
-export default Home;
+export default ASKHeader;

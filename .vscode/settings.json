@@ -9,9 +9,16 @@
         "*.js": "javascriptreact"
     },
     "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
     "cSpell.words": [
+        "Sidenav",
         "browserslist",
         "linebreak",
-        "minified"
+        "minified",
+        "reactstrap"
     ]
 }
