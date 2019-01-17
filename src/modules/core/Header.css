@@ -1,0 +1,61 @@
+.main-header {
+    background: #00628B;
+    border-bottom: 2px solid #D35106;
+    border-top: 3px solid #335c91;
+    box-shadow: 0 0 3px #000;
+    margin-bottom: -3px;
+    /* must be greater than sidenav zindex value */
+    z-index: 9995;
+    height: 55px;
+}
+
+.main-header .logo-img {
+    position: absolute;
+    height: 45px;
+    left: 45px;
+}
+
+.user-options {
+    margin-right: 5px;
+}
+
+.user-options .user-img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: #222;
+    background: #ddd;
+    border: 1px solid #e2e2e2;
+    display: inline-block;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.main-header .menu-toggle {
+    display: none;
+}
+
+.main-header .menu-toggle {
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    padding: 15px 12px 25px 12px
+}
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show>.btn-secondary.dropdown-toggle {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn.focus,
+.btn:focus,
+.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-secondary.dropdown-toggle:focus  {
+    outline: 0;
+    box-shadow: none;
+}

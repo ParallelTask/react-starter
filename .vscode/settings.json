@@ -15,10 +15,19 @@
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
     "cSpell.words": [
+        "Calibri",
+        "HRMS",
         "Sidenav",
         "browserslist",
+        "dropdown",
         "linebreak",
         "minified",
-        "reactstrap"
+        "noopener",
+        "noreferrer",
+        "primeicons",
+        "primereact",
+        "reactstrap",
+        "sangam",
+        "zindex"
     ]
 }

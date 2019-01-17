@@ -1,0 +1,21 @@
+.main-wrapper {
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+}
+
+@media (min-width: 767px) {
+    .main-content {
+        /* padding-top must be equal to the height+border of header */
+        /* padding-left must be equal to the width of sidenav */
+        padding: 62px 0px 60px 45px;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-content {
+        /* padding-top must be equal to the height+border of header */
+        padding-top: 62px;
+        padding-bottom: 10px;
+    }
+}

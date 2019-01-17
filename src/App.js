@@ -1,20 +1,29 @@
 import React from 'react';
+// import { Button } from 'primereact/button';
 import './App.css';
-import AppRouter from './AppRouter';
-import ASKHeader from './modules/core/Header';
-import ASKFooter from './modules/core/Footer';
-import ASKNavbar from './modules/core/Navbar';
-import { Button } from 'reactstrap';
+// import AppRouter from './AppRouter';
+import Header from './modules/core/Header';
+import Footer from './modules/core/Footer';
+import Navbar from './modules/core/Navbar';
 
 class App extends React.Component {
     render() {
         return (
             <div>
-                <ASKHeader />
+                {/* <Header />
                 <ASKNavbar />
                 <AppRouter />
                 <ASKFooter />
-                <Button color="danger">Danger!</Button>
+                <Button label="Danger" className="p-button-raised p-button-danger" /> */}
+                <div className="main-wrapper">
+                    <Header />
+                    <Navbar />
+                    <Footer />
+                    {/* <div className="main-content">
+                        <router-outlet></router-outlet>
+                    </div>
+                    <ims-footer></ims-footer> */}
+                </div>
             </div>
         );
     }
