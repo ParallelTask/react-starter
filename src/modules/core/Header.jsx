@@ -24,7 +24,7 @@ export default class Header extends React.Component {
                 <img className="logo-img" src={process.env.PUBLIC_URL + '/images/logo-ggk.png'} alt="ggk-logo" />
                 <div className="float-right user-options">
                     <Dropdown isOpen={this.state.userSettings} toggle={this.toggle}>
-                        <DropdownToggle caret>
+                        <DropdownToggle>
                             <div className="user-img">K</div>
                             <span className="user-name">Karthik Konkula</span>
                         </DropdownToggle>

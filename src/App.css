@@ -6,16 +6,19 @@
 
 @media (min-width: 767px) {
     .main-content {
-        /* padding-top must be equal to the height+border of header */
-        /* padding-left must be equal to the width of sidenav */
-        padding: 62px 0px 60px 45px;
+        /* margin-top must be equal to the height+border of header */
+        /* margin-left must be equal to width of sidenav + 15 */
+        /* margin-right must be equal to 15 */
+        margin: 20px 15px 60px 60px;
+        padding: 15px 40px 60px 40px;
+        border: 1px solid #f2f2f2;
     }
 }
 
 @media (max-width: 767px) {
     .main-content {
         /* padding-top must be equal to the height+border of header */
-        padding-top: 62px;
+        padding-top: 0px;
         padding-bottom: 10px;
     }
 }

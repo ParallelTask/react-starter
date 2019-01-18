@@ -17,12 +17,17 @@
 
 .user-options {
     margin-right: 5px;
+
+}
+
+.user-options .user-name {
+    font-size: 14px;
 }
 
 .user-options .user-img {
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 26px;
+    height: 26px;
     color: #222;
     background: #ddd;
     border: 1px solid #e2e2e2;
