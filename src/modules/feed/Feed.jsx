@@ -24,6 +24,8 @@ export default class Feed extends React.Component {
     onFeedSearch() {
         const query = this.state.feedValue;
         const relativeUrl = this.props.match.url;
+        // Refer
+        // https://stackoverflow.com/questions/39894547/navigating-programmatically-in-react-router-v4
         this.props.history.push(`${relativeUrl}/articles?q=${query}`);
     }
 
