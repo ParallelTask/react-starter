@@ -2,13 +2,14 @@ import React from 'react';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import './Header.css';
 
-export default class Header extends React.Component {
+export class Header extends React.Component {
+
     constructor(props) {
         super(props);
-        this.toggle = this.toggle.bind(this);
         this.state = {
             userSettings: false
         };
+        this.toggle = this.toggle.bind(this);
     }
 
     toggle() {
@@ -21,7 +22,7 @@ export default class Header extends React.Component {
         return (
             <nav className="navbar navbar-fixed-top main-header">
                 <span className="glyphicon glyphicon-menu-hamburger menu-toggle" data-target="#menu-content"></span>
-                <img className="logo-img" src={process.env.PUBLIC_URL + '/images/logo-ggk.png'} alt="ggk-logo" />
+                {/* <img className="logo-img" src={process.env.PUBLIC_URL + '/images/logo-ggk.png'} alt="ggk-logo" /> */}
                 <div className="float-right user-options">
                     <Dropdown isOpen={this.state.userSettings} toggle={this.toggle}>
                         <DropdownToggle>

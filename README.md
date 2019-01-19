@@ -74,3 +74,16 @@ This section has moved here: https://github.com/yannickcr/eslint-plugin-react
 ### install @types/reactstrap
 
 Do not forget to install @types/xxx which makes auto-import to work in vscode.
+
+### FAQ
+1. https://stackoverflow.com/questions/48640280/you-should-not-use-link-outside-a-router
+2. https://stackoverflow.com/questions/41474134/nested-routes-with-react-router-v4
+3. https://github.com/ReactTraining/react-router/issues/4410
+4. https://stackoverflow.com/questions/41131450/active-link-with-react-router
+5. https://github.com/ReactTraining/react-router/issues/5379
+6. https://stackoverflow.com/questions/46989454/class-vs-classname-in-react-16
+7. https://stackoverflow.com/questions/38296761/how-to-support-es7-in-eslint
+8. https://stephenmann.io/post/how-to-setup-flow-with-create-react-app-and-visual-studio-code/
+9. https://eslint.org/docs/user-guide/configuring#specifying-environments
+10. https://stackoverflow.com/questions/39894547/navigating-programmatically-in-react-router-v4
+11. https://stackoverflow.com/questions/29852998/getting-query-parameters-from-react-router-hash-fragment

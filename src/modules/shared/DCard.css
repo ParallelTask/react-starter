@@ -1,0 +1,43 @@
+.d-card {
+    margin: 1.2rem 0rem;
+}
+
+.d-card-title a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* max-width: 95%; */
+    color: #1a0dab;
+    font-weight: 400;
+    display: block;
+    padding: 0.3rem 0rem;
+}
+
+.d-card-body {
+    position: relative;
+}
+
+.d-card-body div {
+    position: relative;
+    display: inline-block;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 4.8em;
+    /* 1.6 * 3 = 4.8/
+    /* (Number of lines you want visible) * (line-height) */
+    line-height: 1.6em;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.d-card-body div::after {
+    content: "...";
+    position: relative;
+}
+
+.d-card-footer div {
+    font-size: 12px;
+    text-align: right;
+    color: #666;
+}

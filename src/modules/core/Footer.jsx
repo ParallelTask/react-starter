@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
 
-export default class Footer extends React.Component {
+export class Footer extends React.Component {
     render() {
         return (
             <footer className="main-footer">
@@ -13,7 +13,7 @@ export default class Footer extends React.Component {
                         <a
                             rel="noreferrer noopener"
                             target="_blank"
-                            href="http://www.ggktech.com">GGK Technologies
+                            href="http://www.ggktech.com">{/*GGK Technologies*/}
                         </a>
                     </strong> All Rights Reserved.
                 </div>

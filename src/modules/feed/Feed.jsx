@@ -1,12 +1,13 @@
 import React from 'react';
-import { Link, Route, Switch } from 'react-router-dom';
+import { NavLink, Route, Switch } from 'react-router-dom';
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
 import { Nav, NavItem } from 'reactstrap';
+import { Article } from '../article/Article';
+import { News } from '../news/News';
 import './Feed.css';
-import Article from '../article/Article';
 
-export default class Feed extends React.Component {
+export class Feed extends React.Component {
 
     constructor(props) {
         super(props);
@@ -24,9 +25,7 @@ export default class Feed extends React.Component {
     onFeedSearch() {
         const query = this.state.feedValue;
         const relativeUrl = this.props.match.url;
-        // Refer
-        // https://stackoverflow.com/questions/39894547/navigating-programmatically-in-react-router-v4
-        this.props.history.push(`${relativeUrl}/articles?q=${query}`);
+        this.props.history.push(`${relativeUrl}/news?q=${query}`);
     }
 
     render() {
@@ -34,35 +33,61 @@ export default class Feed extends React.Component {
         const query = this.state.feedValue;
         return (
             <div className="p-grid">
-                <div className="p-col-fixed" style={{ width: '55%' }}>
+                <div className="p-col-fixed">
                     <div className="box">
                         <InputText
+                            className="inp-feed-search"
                             value={this.state.feedValue}
-                            style={{ width: '85%' }}
                             onChange={this.onFeedValue}
                         />
-                        <Button icon="pi pi-search" onClick={this.onFeedSearch} />
+                        <Button
+                            className="btn-feed-search"
+                            icon="pi pi-search"
+                            onClick={this.onFeedSearch}
+                        />
                         <Nav>
                             <NavItem>
-                                <Link to={`${relativeUrl}/articles?q=${query}`}>Articles</Link>
+                                <NavLink
+                                    activeClassName="active-feed"
+                                    to={`${relativeUrl}/news`}
+                                >News</NavLink>
                             </NavItem>
                             <NavItem>
-                                <Link to={`${relativeUrl}/wp`}>WhitePapers</Link>
+                                <NavLink
+                                    activeClassName="active-feed"
+                                    to={{
+                                        pathname: `${relativeUrl}/articles`,
+                                        search: `q=${query}`
+                                    }}
+                                >Articles</NavLink>
                             </NavItem>
                             <NavItem>
-                                <Link to={`${relativeUrl}/pocs`}>POCs</Link>
+                                <NavLink
+                                    activeClassName="active-feed"
+                                    to={`${relativeUrl}/wp`}
+                                >WhitePapers</NavLink>
                             </NavItem>
                             <NavItem>
-                                <Link to={`${relativeUrl}/news`}>News</Link>
+                                <NavLink
+                                    activeClassName="active-feed"
+                                    to={`${relativeUrl}/pocs`}
+                                >POCs</NavLink>
                             </NavItem>
                             <NavItem>
-                                <Link to={`${relativeUrl}/events`}>Events</Link>
+                                <NavLink
+                                    activeClassName="active-feed"
+                                    to={`${relativeUrl}/events`}
+                                >Events</NavLink>
                             </NavItem>
                         </Nav>
                         <Switch>
                             <Route
                                 path={`${relativeUrl}/articles`}
                                 component={Article}
+                            />
+                            <Route
+                                path={`${relativeUrl}/news`}
+                                component={News}
                             />
                         </Switch>
                     </div>

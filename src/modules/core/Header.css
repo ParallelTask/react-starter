@@ -5,7 +5,7 @@
     box-shadow: 0 0 3px #000;
     margin-bottom: -3px;
     /* must be greater than sidenav zindex value */
-    z-index: 9995;
+    z-index: 9991;
     height: 55px;
 }
 
@@ -17,7 +17,6 @@
 
 .user-options {
     margin-right: 5px;
-
 }
 
 .user-options .user-name {
@@ -44,7 +43,7 @@
     display: inline-block;
     cursor: pointer;
     color: #fff;
-    padding: 15px 12px 25px 12px
+    padding: 15px 12px 25px 12px;
 }
 
 .btn-secondary,
@@ -60,7 +59,7 @@
 .btn:focus,
 .btn-secondary:not(:disabled):not(.disabled).active:focus,
 .btn-secondary:not(:disabled):not(.disabled):active:focus,
-.show>.btn-secondary.dropdown-toggle:focus  {
+.show>.btn-secondary.dropdown-toggle:focus {
     outline: 0;
     box-shadow: none;
 }
