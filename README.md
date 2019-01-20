@@ -87,3 +87,7 @@ Do not forget to install @types/xxx which makes auto-import to work in vscode.
 9. https://eslint.org/docs/user-guide/configuring#specifying-environments
 10. https://stackoverflow.com/questions/39894547/navigating-programmatically-in-react-router-v4
 11. https://stackoverflow.com/questions/29852998/getting-query-parameters-from-react-router-hash-fragment
+12. https://www.typescriptlang.org/docs/handbook/type-checking-javascript-files.html
+13. https://hackernoon.com/why-i-no-longer-use-typescript-with-react-and-why-you-shouldnt-either-e744d27452b4
+14. https://github.com/Microsoft/TypeScript/wiki/JSDoc-support-in-JavaScript
+15. https://stackoverflow.com/questions/30948970/how-to-disable-eslint-react-prop-types-rule-in-a-file
