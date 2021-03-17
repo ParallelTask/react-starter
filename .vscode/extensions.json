@@ -9,9 +9,7 @@
         "eamodio.gitlens",
         "donjayamanne.githistory",
         "streetsidesoftware.code-spell-checker",
-        "joshpeng.sublime-babel-vscode",
         "hnw.vscode-auto-open-markdown-preview",
-        "zignd.html-css-class-completion",
-        "michelemelluso.code-beautifier"
+        "zignd.html-css-class-completion"
     ]
 }
