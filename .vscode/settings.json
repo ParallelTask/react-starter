@@ -1,21 +1,38 @@
 {
     "files.exclude": {
-        "node_modules/": true,
+        "node_modules": true,
         "LICENSE": true,
-        "build": true,
-        "**/*.js": {
-            "when": "$(basename).ts"
-        }
+        "dist": true
+    },
+    "files.associations": {
+        "*.js": "javascriptreact"
     },
     "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
     "cSpell.words": [
-        "Segoe",
-        "antialiased",
+        "Calibri",
+        "HRMS",
+        "POCs",
+        "Sidenav",
         "browserslist",
+        "dropdown",
         "homescreen",
-        "keyframes",
+        "inputtext",
+        "linebreak",
+        "minified",
         "noopener",
         "noreferrer",
-        "webfonts"
+        "primeflex",
+        "primeicons",
+        "primereact",
+        "reactstrap",
+        "sangam",
+        "treeview",
+        "webfonts",
+        "zindex"
     ]
 }
